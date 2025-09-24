@@ -3,7 +3,7 @@ import vector1 from "../../assets/vector1.png"
 import vector2 from "../../assets/vector2.png"
 import Container from "../../Components/Container";
 
-const CountBox = () => {
+const CountBox = ({inProgress,resolved}) => {
     return (
        <Container>
          <div className="md:flex my-3 gap-3 ">
@@ -11,7 +11,7 @@ const CountBox = () => {
   <img src={vector1} alt="" className="z-10" />
   <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center text-white">
     <p className="text-sm whitespace-nowrap">In-Progress</p>
-    <h1 className="text-3xl font-bold">0</h1>
+    <h1 className="text-3xl font-bold">{inProgress}</h1>
   </div>
   <img src={vector2} alt="" className="z-10" />
 </div>
@@ -21,7 +21,7 @@ const CountBox = () => {
                 <img src={vector1} alt="" />
                 <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center text-white">
                     <h2>Resolved</h2>
-                <h1 className="text-3xl font-bold">0</h1>
+                <h1 className="text-3xl font-bold">{resolved}</h1>
                 
                 </div>
                 <img src={vector2} alt="" />

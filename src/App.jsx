@@ -1,31 +1,35 @@
+import { useEffect, useState } from 'react';
+import './App.css';
+import CardContainer from './Components/CardContainer/CardContainer';
+import CountBox from './Components/CountBox/CountBox';
+import Footer from './Components/Footer/Footer';
+import Navbar from './Components/Navbar/NavBar';
 
-import { Suspense } from 'react'
-import './App.css'
-import CardContainer from './Components/CardContainer/CardContainer'
-import Container from './Components/Container'
-import CountBox from './Components/CountBox/CountBox'
-import Footer from './Components/Footer/Footer'
-import Navbar from './Components/Navbar/NavBar'
-
-const fetchData= async()=>{
-const result = await fetch("/data.json")
-return result.json();
-}
 function App() {
-const fetchPromise = fetchData();
-// console.log(fetchPromise)
+  const [data, setData] = useState([]);
+
+  // Fetch data on mount
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await fetch('/data.json');
+      const json = await result.json();
+      setData(json);
+    };
+    fetchData();
+  }, []);
+
+  // Counts
+  const inProgressCount = data.filter(elm => elm.status === "In-Progress").length;
+  const resolvedCount = data.filter(elm => elm.status === "Resolved").length;
 
   return (
     <>
-     <Navbar></Navbar>
-     <CountBox></CountBox>
-     <Suspense>
-      <CardContainer  fetchPromise={fetchPromise} ></CardContainer>
-     </Suspense>
-     <Footer></Footer>
-  
+      <Navbar />
+      <CountBox inProgress={inProgressCount} resolved={resolvedCount} />
+      <CardContainer data={data} />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

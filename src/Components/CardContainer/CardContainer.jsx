@@ -2,11 +2,9 @@
 import Card from "../Card/Card";
 import Container from "../Container"
 
-import React, { use } from 'react';
 
-const CardContainer = ({fetchPromise}) => {
-    const data = use(fetchPromise);
-    console.log(data)
+const CardContainer = ({data}) => {
+
     return (
        <div>
         <Container>
