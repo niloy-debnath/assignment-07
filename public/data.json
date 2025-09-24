@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login not working",
+    "description": "User cannot log in with correct credentials on the web app.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2025-09-01T10:15:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Payment gateway error",
+    "description": "Stripe payments are failing with error code 402.",
+    "customer": "Jane Smith",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-02T14:22:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Slow loading dashboard",
+    "description": "Dashboard takes more than 10 seconds to load.",
+    "customer": "Acme Corp",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-09-03T08:45:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Email notifications not sent",
+    "description": "Customers are not receiving signup confirmation emails.",
+    "customer": "Chris Evans",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-04T09:30:00Z"
+  },
+  {
+    "id": 5,
+    "title": "UI bug on mobile",
+    "description": "Navigation bar overlaps with header on iPhone devices.",
+    "customer": "Emily Clark",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-05T16:10:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Search not returning results",
+    "description": "Search feature returns empty results even when items exist.",
+    "customer": "Michael Scott",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2025-09-06T11:05:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Broken link on homepage",
+    "description": "The 'Contact Us' link on homepage leads to 404.",
+    "customer": "Dwight Schrute",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-09-07T12:00:00Z"
+  },
+  {
+    "id": 8,
+    "title": "App crashes on Android",
+    "description": "Android app crashes on launch for version 12 users.",
+    "customer": "Pam Beesly",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-08T09:50:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Report export failing",
+    "description": "Exporting reports to CSV throws server error 500.",
+    "customer": "Stanley Hudson",
+    "priority": "Medium",
+    "status": "Closed",
+    "createdAt": "2025-09-09T07:25:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Forgot password not working",
+    "description": "Reset password link is not being sent to user emails.",
+    "customer": "Kevin Malone",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2025-09-10T15:40:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Profile picture upload issue",
+    "description": "Uploading profile pictures results in corrupted files.",
+    "customer": "Angela Martin",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2025-09-11T17:05:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Subscription renewal failed",
+    "description": "Auto-renewal of subscription not charging customers.",
+    "customer": "Oscar Martinez",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-12T20:15:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Chat support offline",
+    "description": "Live chat widget not connecting to support agents.",
+    "customer": "Kelly Kapoor",
+    "priority": "High",
+    "status": "Closed",
+    "createdAt": "2025-09-13T13:30:00Z"
+  },
+  {
+    "id": 14,
+    "title": "Notifications delayed",
+    "description": "Push notifications arrive 30+ minutes late.",
+    "customer": "Ryan Howard",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-14T06:20:00Z"
+  },
+  {
+    "id": 15,
+    "title": "Invoice not generated",
+    "description": "Monthly invoice not generated for premium customers.",
+    "customer": "Jim Halpert",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2025-09-15T19:10:00Z"
+  }
+]
